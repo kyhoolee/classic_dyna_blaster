@@ -1,0 +1,34 @@
+{
+    "assets": {
+        "map_tiles": {"type": "image", "source": "assets/images/bomberman_spritesheet3.png"},
+        "player_spritesheet": {"type": "spritesheet", "source": "assets/images/player_spritesheet.png", "frame_width": 16, "frame_height": 22},
+        "player_death_spritesheet": {"type": "spritesheet", "source": "assets/images/player_with_dead.png", "frame_width": 23, "frame_height": 23, "spacing": 1},
+        
+        "bomb_explosion_spritesheet": {"type": "spritesheet", "source": "assets/images/bomb_explosion_spritesheet.png", "frame_width": 16, "frame_height": 16},
+        "enemy_spritesheet": {"type": "spritesheet", "source": "assets/images/enemy_spritesheet.png", "frame_width": 16, "frame_height": 18},
+        
+        "item_spritesheet": {"type": "spritesheet", "source": "assets/images/item_spritesheet.png", "frame_width": 16, "frame_height": 16},
+        
+        "heart_image": {"type": "image", "source": "assets/images/heart.png"},
+        "target_image": {"type": "image", "source": "assets/images/target.png"},
+        "goal_image": {"type": "image", "source": "assets/images/portal.png"},
+        
+        "level_tilemap": {"type": "tilemap", "source": "assets/maps/level2_map.json"}
+    },
+    "groups": [
+        "targets",
+        "items",
+        "explosions",
+        "bombs",
+        "goals",
+        "enemies",
+        "players",
+        "hud",
+        "dying_bricks"
+    ],
+    "map": {
+        "key": "level_tilemap",
+        "tilesets": ["map_tiles"]
+    },
+    "next_level": "assets/levels/level1.json"
+}
